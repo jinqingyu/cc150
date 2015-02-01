@@ -15,6 +15,8 @@ stack<int> sort(stack<int> st)
       res.pop();
       st.push(t);
     }
+    // don't need to pop back those elements.
+    // they will be popped back from st to res automatically.
     res.push(v);
   }
   return res;
